@@ -1,0 +1,1294 @@
+@font-face {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Nunito Regular"), local("Nunito-Regular"), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofIOOaBXso.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    font-display: swap !important;
+}
+@font-face {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Nunito Regular"), local("Nunito-Regular"), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofIO-aBXso.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    font-display: swap !important;
+}
+@font-face {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Nunito Regular"), local("Nunito-Regular"), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofINeaB.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-display: swap !important;
+}
+@font-face {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Nunito Bold"), local("Nunito-Bold"), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAjsOUb-vISTs.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    font-display: swap !important;
+}
+@font-face {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Nunito Bold"), local("Nunito-Bold"), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAjsOUYevI.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-display: swap !important;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    position: relative;
+    list-style: none;
+    font-family: Nunito, sans-serif;
+}
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    padding-top: 137px;
+    font-size: 17px;
+}
+.error {
+    background: #ffe6e6;
+    border: solid 1px #c00;
+    color: #c00;
+}
+h1,
+h2,
+h3 {
+    color: #464646;
+    font-weight: 700;
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+}
+h1 {
+    font-size: 36px;
+    line-height: 40px;
+}
+h2.thin {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+h3 {
+    font-size: 21px;
+    font-weight: 400;
+}
+p {
+    font-size: 17px;
+    line-height: 33px;
+    font-weight: 400;
+    color: #484848;
+    margin-bottom: 30px;
+}
+header {
+    min-height: 110px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 1px 31px rgb(106 107 109 / 34%);
+    border-bottom: solid 1px #dcdcdc;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    padding: 0 0;
+    top: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    z-index: 9999999999;
+}
+.top-head {
+    border-bottom: solid 1px #dcdcdc;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+header #logo {
+    height: 54px;
+}
+section {
+    padding: 60px 0;
+}
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.menu {
+    float: right;
+}
+.menu li {
+    float: left;
+}
+.menu li a {
+    display: block;
+    padding: 20px 17px;
+    font-size: 16px;
+    color: #333;
+}
+.banner {
+    width: 100%;
+    height: 600px;
+    background-color: #edf5ff;
+    padding: 90px 0;
+}
+.banner img {
+    width: 100%;
+    max-width: 458px;
+    margin-top: -10%;
+}
+.div-ondas {
+    width: 100%;
+    height: 124px;
+    background: url(https://adrianoaoli.com/img/ondas.webp) no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+    position: absolute;
+    margin-top: -114px;
+}
+.row {
+    margin: 0 -15px;
+}
+.row:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+.col-sm-1,
+.col-sm-10,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9 {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+}
+.col-sm-1 {
+    width: 8.3%;
+}
+.col-sm-2 {
+    width: 16.6%;
+}
+.col-sm-3 {
+    width: 25%;
+}
+.col-sm-4 {
+    width: 33.3%;
+}
+.col-sm-7 {
+    width: 58.3%;
+}
+.col-sm-8 {
+    width: 66.6%;
+}
+.col-sm-9 {
+    width: 75%;
+}
+.col-sm-10 {
+    width: 83.3%;
+}
+.col-sm-12 {
+    width: 100%;
+}
+.center {
+    text-align: center;
+}
+.right {
+    float: right;
+}
+.cls {
+    clear: both;
+}
+.servicos i {
+    background: #fff;
+    padding: 30px;
+    color: #3175ca;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.11);
+    border-radius: 50%;
+    font-size: 46px;
+    margin-bottom: 28px;
+}
+.start img {
+    width: 90%;
+    margin: 5%;
+    max-width: 450px;
+}
+.checks {
+    padding: 0 0 55px 0;
+}
+.checks li {
+    line-height: 23px;
+    font-weight: 400;
+    color: #737373;
+    margin-bottom: 10px;
+}
+.btn {
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    font-size: 15px;
+    word-spacing: 2px;
+    font-weight: 700;
+    transform: perspective(1px) translateX(0);
+    transition: all 0.2s ease 0s;
+    overflow: hidden;
+    padding: 17px 35px;
+    background-color: #0f70a0;
+    color: #fff !important;
+    transition: all 0.5s ease-in-out;
+}
+.btn:before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+    z-index: -1;
+    cursor: pointer;
+}
+.btn:hover {
+    color: #5882fd !important;
+    box-shadow: 0 0 34px #5882fd;
+}
+.btn:hover:before {
+    transform: scaleX(1) !important;
+}
+.menu .btn {
+    padding: 8px 12px;
+    margin-top: 12px;
+}
+.suporte {
+    background: url(https://adrianoaoli.com/img/suporte.webp) no-repeat;
+    background-size: cover;
+    min-height: 300px;
+}
+.suporte * {
+    color: #fff;
+}
+.suporte .btn-x {
+    border: solid 3px #fff;
+    padding: 12px 29px;
+    display: inline-block;
+    margin-top: 30px;
+}
+.block {
+    padding: 22px;
+    background: #edf5ff;
+    border-radius: 15px;
+    margin: 25px 0;
+    min-height: 214px;
+}
+.block i {
+    display: inline-block;
+    float: left;
+    font-size: 59px;
+    margin-right: 15px;
+    color: #5882fd;
+}
+.questions {
+    background: url(https://adrianoaoli.com/img/ondas-rever.webp) #5c80ad no-repeat;
+    background-size: contain;
+    background-position: top;
+    padding: 163px 0 120px 0;
+}
+.questions h2 {
+    color: #fff;
+    margin-top: 77px;
+}
+.question {
+    padding: 19px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 0 #cfdae8;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+.question h3 {
+    color: #2d4690;
+    font-weight: 400;
+    margin: 15px 0;
+    font-size: 21px;
+}
+.question:hover {
+    box-shadow: 0 0 34px #cfdae8;
+}
+footer {
+    background-image: url(https://adrianoaoli.com/img/footer-pattern.jpg?t=2);
+    margin-top: 80px;
+    padding: 90px 0 0 0;
+    position: relative;
+}
+footer:before {
+    content: "";
+    background-color: #0b113ede;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+footer * {
+    color: #fff;
+}
+footer .logo {
+    width: 70%;
+}
+footer * {
+    font-size: 15px;
+    line-height: 17px;
+}
+footer p {
+    margin-bottom: 12px;
+}
+footer h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+footer li a {
+    padding: 3px 0 5px 0;
+    display: inline-block;
+}
+footer li a:after {
+    transition: all 0.5s ease-in-out;
+    content: "";
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 1px;
+}
+footer li:hover a:after {
+    width: 100%;
+}
+.footer2 {
+    background: rgba(16, 49, 90, 0.52);
+    padding: 40px 0;
+    margin-top: 51px;
+}
+.copy {
+    background: #03080e;
+    padding: 28px 0;
+}
+.copy p {
+    padding: 0;
+    margin: 0;
+    color: #b1bcca;
+    text-align: left;
+    font-size: 14px !important;
+}
+.copy .subf {
+    text-align: left;
+    padding-top: 29px;
+}
+.copy .reds {
+    text-align: right;
+    padding-top: 42px;
+}
+.whatsapp-footer {
+    background: green;
+    position: fixed;
+    z-index: 99999999;
+    bottom: 5%;
+    padding: 6px 8px 11px 15px;
+    -webkit-border-top-right-radius: 30px;
+    -webkit-border-bottom-right-radius: 30px;
+    -moz-border-radius-topright: 30px;
+    -moz-border-radius-bottomright: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.menu-xs {
+    float: right;
+    margin-top: -8px;
+}
+.menu-xs i {
+    display: none;
+}
+.interna {
+    padding: 0;
+}
+.quad {
+    background: url(https://adrianoaoli.com/img/quads.png) no-repeat;
+    width: 450px;
+    height: 330px;
+    position: relative;
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: 61px;
+    opacity: 0.5;
+    right: 0;
+    bottom: 0;
+    background-size: contain !important;
+}
+.quad {
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 330px;
+    opacity: 0.1;
+}
+.pg-facil {
+    padding: 30px 15px 15px 120px;
+    background: #f5f5f5;
+    margin: 60px 0 48px 0;
+    position: relative;
+    box-shadow: 0 9px 13px -13px #000;
+}
+.pg-facil .icn {
+    position: absolute;
+    left: 0;
+}
+.pg-facil b {
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-bottom: solid 2px #2b9fd8;
+}
+.interna h1 {
+    padding-bottom: 15px;
+}
+.nav-lateral {
+    overflow: hidden;
+    border-radius: 11px;
+    display: block;
+    box-shadow: 1px 1px 14px #e0dddd;
+    padding: 0;
+    margin-top: 30px;
+}
+.nav-lateral li {
+    background: rgba(255, 255, 255, 0.7);
+    border-bottom: solid 1px #eceff7;
+    margin-bottom: 0;
+    padding-left: 15px;
+    transition: all 0.8s ease-in-out;
+}
+.nav-lateral a {
+    padding: 15px 10px;
+    transition: all 0.4s ease-in-out;
+    display: block;
+    width: 100%;
+    color: #676767;
+    font-size: 15px;
+}
+.nav-lateral li:hover {
+    background: #d3dff0;
+}
+.nav-lateral a:hover {
+    margin-left: 35px;
+}
+.nav-lateral li:before {
+    content: "\f054";
+    float: left;
+    padding-top: 15px;
+}
+.banner-lat {
+    margin-top: 30px;
+}
+.banner-lat a {
+    display: block;
+    width: 100%;
+}
+.banner-lat a img {
+    width: 100%;
+}
+@keyframes imgrotate {
+    0% {
+        -webkit-transform: skewY(10deg);
+        transform: skewY(10deg);
+        top: -388px;
+    }
+    100% {
+        -webkit-transform: skewY(15deg);
+        transform: skewY(15deg);
+        top: -188px;
+    }
+}
+.img-interna {
+    background: url(https://adrianoaoli.com/img/bg6.webp) no-repeat bottom right;
+    width: 683px;
+    background-size: cover !important;
+    height: 271px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.img-interna:before {
+    content: "";
+    display: block;
+}
+.img-interna:after {
+    background: url(https://adrianoaoli.com/img/ondas-4.webp) no-repeat;
+    content: "";
+    position: absolute;
+    background-size: 100%;
+    height: 321px;
+    width: 700px;
+    bottom: 0;
+    right: 0;
+}
+@media screen and (max-width: 600px) {
+    body {
+        padding-top: 80px;
+    }
+    h1 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+    .col-xs-3 {
+        width: 25%;
+    }
+    .col-xs-6 {
+        width: 50%;
+    }
+    .col-xs-9 {
+        width: 75%;
+    }
+    .banner {
+        height: auto;
+        padding: 41px 0;
+    }
+    h2.thin {
+        font-size: 29px;
+        line-height: 35px;
+    }
+    footer .logo {
+        width: 50%;
+        margin: 0 auto !important;
+    }
+    .logorodape {
+        text-align: center;
+    }
+    footer .row div {
+        margin-bottom: 15px;
+    }
+    .img-interna {
+        width: 100%;
+        height: 246px;
+    }
+    .img-interna:after {
+        bottom: -1px;
+        right: -1px;
+    }
+    .img-interna:before {
+        content: "";
+        display: block;
+        width: 100%;
+        background: rgba(28, 39, 78, 0.56);
+        height: 100%;
+    }
+    .interna h1 {
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .topicos-interesse {
+        margin-top: 0;
+    }
+    .form-group.row div,
+    .form-group.row label {
+        width: 100% !important;
+    }
+    .div-ondas {
+        background-size: 100% auto;
+    }
+    .btn {
+        display: block !important;
+        margin: 0 auto 58px auto !important;
+        text-align: center !important;
+        max-width: 80% !important;
+    }
+    header {
+        min-height: auto;
+    }
+}
+@media screen and (max-width: 1060px) {
+    .menu {
+        display: none !important;
+        right: 0 !important;
+    }
+    .menu-xs:hover .menu {
+        right: -27px !important;
+        display: block !important;
+    }
+    .menu li a {
+        padding: 11px 0;
+        border-bottom: solid 1px #dcdcdc;
+    }
+    .menu-xs {
+        top: 10px;
+        position: absolute;
+        right: 10px;
+    }
+    .menu-xs i {
+        font-size: 27px;
+        cursor: pointer;
+        display: block;
+    }
+    .menu-xs:hover .menu {
+        right: -28px !important;
+    }
+    .menu li {
+        float: none;
+        width: 100%;
+    }
+    .menu {
+        position: absolute;
+        right: -500px;
+        background: rgba(255, 255, 255, 0.98);
+        width: 228px;
+        padding: 20px;
+        top: 36px;
+        box-shadow: 0 0 44px rgba(128, 128, 128, 0.34);
+        transition: all 0.3s ease-in-out;
+    }
+    .menu .btn {
+        margin-top: 15px !important;
+        margin-bottom: 0 !important;
+    }
+}
+.form-control {
+    width: 100%;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #fff;
+    border: solid 1px #afafaf;
+}
+.erro {
+    border: solid 1px red;
+    background: #ffefef;
+}
+.success {
+    border: solid 1px #5cab5c;
+    background: #eaffee;
+}
+.resultado div {
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.nav-up {
+    top: -142px;
+}
+.checks li:before,
+.icn,
+h2:after {
+    background: url(https://adrianoaoli.com/img/icones.svg) no-repeat !important;
+    background-size: 1029px;
+    display: inline-block;
+    width: 106px;
+    height: 106px;
+    content: "";
+}
+h2:after {
+    height: 17px;
+    width: 81px;
+    background-position: 61% 39% !important;
+    display: block;
+    margin-top: 15px;
+}
+h2.thin:after {
+    margin: 15px auto 0 auto;
+}
+.icn.logo1 {
+    background-position: 13% 38.3% !important;
+    width: 145px;
+    height: 54px;
+    background-size: 1688px !important;
+}
+.icn.logo2 {
+    width: 118px;
+    height: 125px;
+    background-size: 2000px !important;
+    background-position: 25.5% 37.3% !important;
+}
+.icn.chrome {
+    background-position: 12.9% 18.5% !important;
+}
+.icn.servi {
+    background-position: 24.4% 18.5% !important;
+}
+.icn.comments {
+    background-position: 36.8% 18.5% !important;
+}
+.icn.megafone {
+    background-position: 48.8% 18.5% !important;
+}
+.icn.dollar {
+    background-position: 60% 18.5% !important;
+}
+.icn.clock {
+    background-position: 72% 18.5% !important;
+}
+.icn.phone,
+.icn.whatsapp {
+    background-position: 3% 19.5% !important;
+    width: 30px;
+    height: 30px;
+    background-size: 421px !important;
+    display: inline-block;
+    margin-left: 3px;
+    position: relative;
+    top: 8px;
+}
+.icn.whatsapp {
+    background-position: 72% 37.5% !important;
+}
+.icn.facebook,
+.icn.instagram,
+.icn.linkedin,
+.icn.youtube {
+    display: none;
+    background-position: 48.7% 37.5% !important;
+    background-size: 652px !important;
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+}
+.icn.linkedin {
+    background-position: 94.7% 37.5% !important;
+    background-size: 652px !important;
+    width: 48px;
+    height: 32px;
+    opacity: 0.8;
+}
+.icn.youtube {
+    background-position: 0.7% 71% !important;
+    background-size: 652px !important;
+    width: 48px;
+    height: 32px;
+    opacity: 0.8;
+}
+.icn.linkedin,
+.icn.youtube {
+    display: block;
+}
+.icn.facebook {
+    background-position: 37% 37.5% !important;
+    background-size: 557px !important;
+    margin-right: 15px;
+}
+.icn.barc {
+    background-position: 94.5% 21.5% !important;
+    background-size: 599px !important;
+    width: 32px;
+    height: 32px;
+    margin-top: 15px;
+}
+.checks li:before {
+    width: 17px !important;
+    height: 17px !important;
+    content: "" !important;
+    margin-right: 11px;
+    background-position: 83.8% 19.5% !important;
+    background-size: 299px !important;
+}
+.checks.nav-lateral li::before {
+    margin-top: 13px;
+}
+.banneri {
+    width: 100%;
+    height: 50px;
+    background-size: cover !important;
+    margin-bottom: 50px;
+}
+.banneri.bannerorc {
+    background: #000 url(https://adrianoaoli.com/img/b-orcamento.webp) no-repeat top center;
+}
+.banneri.bannercont {
+    background: #000312 url(https://adrianoaoli.com/img/b-contat.webp) no-repeat top center;
+}
+.banneri.bannersobre {
+    background: #0f0905 url(https://adrianoaoli.com/img/b-sobre.webp) no-repeat top center;
+    background-size: cover !important;
+}
+.banneri.bannersites {
+    background: #0f0905 url(https://adrianoaoli.com/img/b-sites.webp) no-repeat top center;
+    background-size: 68% !important;
+    background-position: bottom;
+}
+.banneri.bannersistemas {
+    background: #0f0905 url(https://adrianoaoli.com/img/b-sistemas.webp) no-repeat top center;
+    background-size: cover !important;
+    background-position: bottom;
+}
+.banneri.bannerwhatsapp {
+    background: #00c2aa url(https://adrianoaoli.com/img/b-whatsapp.webp) no-repeat top center;
+    background-size: auto 100% !important;
+    background-position: center;
+}
+@media screen and (max-width: 600px) {
+    .banneri.bannercont,
+    .banneri.bannerorc,
+    .banneri.bannersistemasaju,
+    .banneri.bannersites {
+        background-position: 45%;
+        background-size: auto 100% !important;
+    }
+    .banneri.bannerorc {
+        background-position: 82%;
+    }
+}
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+.table td,
+.table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    text-align: left;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #edf5ff;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 10px;
+    margin: 30px 0;
+}
+.videowrapper .video-inner,
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.video-overlay {
+    position: absolute;
+    background: rgb(0 0 0 / 35%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.5s all ease-in-out;
+}
+.videowrapper:hover .video-overlay {
+    background: rgb(0 0 0 / 55%);
+}
+.video-title {
+    z-index: 99;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.autor,
+.datas {
+    display: block;
+}
+.interna p {
+    font-size: 17px !important;
+    line-height: 26px !important;
+    font-weight: 400 !important;
+    margin-bottom: 22px !important;
+    word-break: break-word;
+    color: #666 !important;
+}
+header {
+    position: relative !important;
+}
+body {
+    padding-top: 0 !important;
+}
+.ntags p {
+    display: inline-block !important;
+    margin-bottom: 5px !important;
+    padding-right: 31px !important;
+}
+@media screen and (max-width: 600px) {
+    .banneri {
+        background-position: 45% !important;
+        background-size: cover !important;
+        height: 49px !important;
+        margin-bottom: 17px !important;
+    }
+    h1 {
+        font-size: 20px !important;
+        line-height: 22px !important;
+    }
+    .autor,
+    .datas {
+        font-size: 12px;
+    }
+    .share-ic,
+    .video-play {
+        margin-right: 0 !important;
+    }
+}
+.ads {
+    border-top: solid 1px #dcdcdc;
+    border-bottom: solid 1px #dcdcdc;
+    margin-top: 15px;
+    width: 100%;
+    margin: 40px 0;
+    padding: 20px 0;
+}
+.resistoresPage h1 {
+    padding-bottom: 10px;
+}
+#sharebox {
+    float: right;
+    z-index: 9999;
+}
+.share-ic,
+.video-play {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    background: url(https://adrianoaoli.com/img/icones.svg) no-repeat !important;
+    background-size: 500px !important;
+    background-position: 2.1% 54% !important;
+    display: inline-block;
+}
+.video-play {
+    position: absolute;
+    left: calc(50% - 60px);
+    top: calc(50% - 40px);
+    background-position: 72.1% 54% !important;
+    width: 121px;
+    height: 80px;
+    background-size: 1847px !important;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.videowrapper:hover .video-play {
+    background-position: 60.4% 54% !important;
+}
+.share-facebook {
+    background-position: 14.3% 54% !important;
+}
+.share-twitter {
+    background-position: 25.8% 54% !important;
+}
+.share-ic:last-child {
+    margin-right: 0;
+}
+@media screen and (max-width: 600px) {
+    .share-ic,
+    .video-play {
+        width: 26px;
+        height: 22px;
+        background-size: 342px !important;
+    }
+}
+header {
+    position: initial;
+    box-shadow: 0 1px 7px rgb(5 17 33 / 23%);
+}
+body {
+    padding-top: 0;
+}
+.whatsapp-footer {
+    display: none;
+}
+.conteudo .espacador {
+    margin-bottom: 15px;
+}
+#medidor {
+    position: relative;
+    min-height: 335px;
+}
+#medidor img {
+    width: 100%;
+    position: absolute;
+}
+.conteudo img {
+    border-radius: 5px;
+}
+label {
+    margin-top: 15px;
+    display: block;
+}
+label.lblcenter {
+    text-align: center;
+}
+.form-control {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0;
+    height: 54px;
+}
+.vlrtotmob {
+    background: #dcdcdc;
+    text-align: center;
+    margin-top: 30px;
+    height: 73px;
+}
+.minutos h2,
+.vlrtotmob h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 21px;
+}
+.minutos h2:after,
+.vlrtotmob h2:after {
+    display: none;
+}
+#medicao,
+#medicaoValor {
+    font-family: VT323, monospace;
+    color: #fff;
+    font-size: 1.8em;
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 33%;
+    width: 36%;
+    letter-spacing: 0.45em;
+    text-align: right;
+}
+.azul {
+    background: #edf5ff;
+    border-radius: 5px;
+}
+#medicaoValor {
+    margin-top: 42%;
+}
+@media screen and (max-width: 600px) {
+    #medicao,
+    #medicaoValor {
+        font-size: 1.6em;
+    }
+    label {
+        text-align: center;
+        background: #dcdcdc;
+        margin-bottom: 7px;
+        font-size: 16px;
+    }
+}
+.progress-horizontal {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    margin-top: 58%;
+    width: 29%;
+    margin-left: 34%;
+    height: 4px;
+}
+.bar-horizontal {
+    width: 50%;
+    height: 100%;
+    margin-left: 0;
+    background-color: #000;
+}
+.bar-horizontal.bar-horizontal-animada {
+    animation-name: spinner;
+    animation-duration: 750ms;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+@keyframes spinner {
+    0% {
+        width: 5%;
+    }
+    100% {
+        width: 5%;
+        margin-left: 100%;
+    }
+}
+.consumos span {
+    font-size: 10px;
+}
+.consumos td,
+.consumos th {
+    font-size: 12px;
+    width: 25%;
+}
+.calculadora {
+    padding: 15px 15px 30px 15px;
+    background: #f3f3f3;
+    border-radius: 5px;
+}
+.calculadora label {
+    margin-top: 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.divMins {
+    font-size: 11px;
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+.divMins h2 {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.divMins label {
+    margin: 0;
+    background: 0 0;
+}
+.minutos {
+    width: 50%;
+    float: right;
+    background: #e4e4e4;
+    padding-top: 5px;
+    text-align: center;
+    border-top: solid 2px #bdbdbd;
+}
+a.calcAba {
+    display: inline-block;
+    padding: 15px;
+    background: #f9f9f9;
+    border-top: solid 2px rgb(220 220 220);
+    color: #656565;
+    box-shadow: inset 0 -20px 13px -18px #c8c8c8;
+    top: 4px;
+    font-size: 14px;
+}
+a.calcAba.active {
+    font-weight: 700;
+    color: #333;
+    font-weight: 700;
+    border-top: solid 2px #333;
+    background: #f3f3f3;
+    box-shadow: none;
+    border-top: solid 2px rgb(255 140 0);
+    top: 0;
+}
+#grTensao div {
+    width: 33%;
+    float: left;
+    padding: 0 10px;
+}
+#grTensao div:first-child {
+    padding-left: 0;
+}
+#grTensao div:last-child {
+    padding-right: 0;
+}
+.row.sugerirCalc {
+    margin-right: 15px;
+}
+@media screen and (max-width: 600px) {
+    #grTensao div {
+        width: 100%;
+        padding: 0;
+    }
+    .calculadora {
+        padding: 0 10px;
+    }
+    .minutos {
+        width: 100%;
+    }
+    .tempouso div {
+        padding: 0 15px;
+    }
+    .minutosw {
+        width: calc(100% - 12px);
+        margin-left: 6px;
+    }
+}
+.video-online .video-opacity {
+    opacity: 0;
+}
+.video-online #como-calculcar-consumo-kwh,
+.video-online #conta-energia,
+.video-online .ads,
+.video-online .conheca-canal,
+.video-online .sugerirCalc,
+.video-online .videowrapper,
+.video-online br,
+.video-online h2 {
+    display: none;
+}
+.video-online .calculadora {
+    margin-bottom: 37px;
+}
+.video-online .calculadora h2 {
+    display: block;
+}
+.video-online #medidor {
+    min-height: 368px;
+}
+.video-online #como-e-feito span {
+    opacity: 0;
+}
+#como-e-feito {
+    background: #6200ff;
+    padding: 50px 25px;
+    margin-bottom: 40px;
+}
+#como-e-feito * {
+    font-family: monospace;
+    color: #fff;
+}
+#como-e-feito .prn {
+    display: inline-block;
+    padding: 0 5px;
+    letter-spacing: -1px;
+    border-bottom: solid 1px #fff;
+}
+#como-e-feito span {
+    transition: all 0.5s ease-in-out;
+}
+#como-e-feito span.ats {
+    opacity: 1;
+}
+.lkdingw {
+    width: 175px;
+}
+a.lkding svg {
+    display: block;
+    width: 26px;
+    height: 24px;
+    float: right;
+    margin-right: 5px;
+    color: #0a66c2;
+}
+a.lkding span {
+    color: #0a66c2;
+    width: 100px;
+    display: block;
+    float: right;
+    text-align: right;
+    line-height: 13px;
+    padding-right: 8px;
+}
